@@ -69,4 +69,6 @@ OR
 # * Would you consider this a good clustering?
 > library(cluster)
 > clusplot(df, fit.km$cluster, color= TRUE, shade = TRUE)
+> library(flexclust)
+> randIndex(table(wine$Type, fit.km$cluster))
 
